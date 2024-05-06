@@ -356,7 +356,7 @@ class Chrome(selenium.webdriver.chrome.webdriver.WebDriver):
                 keep_user_data_dir = False
                 arg = "--user-data-dir=%s" % user_data_dir
                 options.add_argument(arg)
-                logger.debug(
+                logger.info(
                     "created a temporary folder in which the user-data (profile) will be stored during this\n"
                     "session, and added it to chrome startup arguments: %s" % arg
                 )
